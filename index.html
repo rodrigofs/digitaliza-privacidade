@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade – Digitaliza</title>
+<meta name="description" content="Política de privacidade do app Digitaliza: scanner de documentos, PDF, foto 3x4 e assinatura digital.">
+<style>
+  :root { --bg: #f7f9fc; --card: #ffffff; --text: #1b1f27; --muted: #555d6b; --accent: #0b5fd6; --line: #e2e6ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1218; --card: #171b23; --text: #e8ebf1; --muted: #a3abb9; --accent: #7fb0ff; --line: #2a303b; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { margin-bottom: 24px; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 6px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); }
+  .summary { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; padding: 16px 20px; }
+  .summary ul { margin: 8px 0 0; padding-left: 20px; }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Política de Privacidade do Digitaliza</h1>
+    <p class="muted">Última atualização: 9 de novembro de 2026</p>
+  </header>
+
+  <div class="summary">
+    <strong>Em resumo</strong>
+    <ul>
+      <li>O Digitaliza não coleta, não armazena em servidores e não vende nenhum dado seu.</li>
+      <li>Documentos, textos, fotos, rostos, certificado digital e senha são processados e guardados só no seu celular.</li>
+      <li>Não há cadastro, login, anúncios nem ferramentas de rastreamento.</li>
+      <li>A internet só é usada para baixar recursos (modelos de IA) e quando você mesmo escolhe compartilhar algo.</li>
+    </ul>
+  </div>
+
+  <p>Esta política explica como o aplicativo <strong>Digitaliza</strong> (pacote <code>com.rodrigofs.scanner</code>), desenvolvido por Rodrigo Fernandes, trata informações, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD) e com as políticas do Google Play.</p>
+
+  <h2>1. Dados que o desenvolvedor coleta</h2>
+  <p>Nenhum. O app não envia documentos, imagens, textos, dados de uso, localização, contatos ou identificadores para o desenvolvedor nem para servidores próprios. Não existem contas de usuário.</p>
+
+  <h2>2. O que é processado no seu aparelho</h2>
+  <ul>
+    <li><strong>Documentos digitalizados e PDFs</strong>: as imagens e os PDFs ficam em uma área privada do app no seu celular e são apagados quando você descarta o documento ou faz uma nova digitalização.</li>
+    <li><strong>Texto dos documentos (OCR)</strong> e <strong>dados encontrados</strong> (valores, datas, boleto, Pix, CPF/CNPJ): extraídos no próprio aparelho, apenas para você ver e copiar.</li>
+    <li><strong>Foto 3x4 e foto de perfil</strong>: o reconhecimento do rosto, a verificação de acessórios e o recorte da pessoa acontecem no aparelho. Nenhuma imagem do rosto ou informação biométrica é enviada a ninguém. As fotos ficam na área privada do app até você descartá-las, compartilhá-las ou salvá-las na sua galeria.</li>
+    <li><strong>Certificado digital A1 e senha</strong>: guardados criptografados (AES-256) com uma chave do sistema Android Keystore, protegida pelo bloqueio de tela ou biometria do aparelho. Ficam fora do backup automático e nunca saem do celular. A assinatura e a validação de PDFs também acontecem no aparelho.</li>
+    <li><strong>Inteligência artificial opcional</strong> (sugestão de nome de arquivo e mensagem de envio): o modelo roda no próprio celular; o texto do documento não é enviado para a internet.</li>
+  </ul>
+
+  <h2>3. Permissões e acessos</h2>
+  <ul>
+    <li><strong>Câmera</strong>: usada somente quando você toca em “Tirar foto” na foto 3x4 ou na foto de perfil. A digitalização de documentos usa o scanner do Google Play Services.</li>
+    <li><strong>Fotos</strong>: o app usa o seletor de fotos do sistema e só tem acesso às imagens que você escolhe. Ao salvar na galeria, o app grava os arquivos que você gerou na pasta “Digitaliza”.</li>
+    <li><strong>Biometria / bloqueio de tela</strong>: usados apenas para liberar o seu certificado digital.</li>
+    <li><strong>Internet e estado da rede</strong>: para baixar recursos (veja o item 4) e para avisar quando o download da IA seria feito pelos dados móveis.</li>
+  </ul>
+
+  <h2>4. Serviços de terceiros</h2>
+  <ul>
+    <li><strong>Google ML Kit / Google Play Services</strong>: o scanner de documentos, a leitura de texto, o reconhecimento de rosto, a separação da pessoa do fundo e a identificação de acessórios usam bibliotecas do Google que rodam no aparelho. O Google Play Services pode baixar esses modelos e coletar métricas técnicas e de diagnóstico conforme a <a href="https://policies.google.com/privacy?hl=pt-BR">Política de Privacidade do Google</a>. As imagens e os textos dos seus documentos não são enviados por esses recursos.</li>
+    <li><strong>Hugging Face</strong>: se você ativar a inteligência artificial, o app baixa uma única vez o modelo Qwen3-0.6B do site huggingface.co. Como em qualquer download, esse servidor recebe dados técnicos da conexão (como o endereço IP). Nenhum documento ou dado pessoal é enviado. Veja a <a href="https://huggingface.co/privacy">política de privacidade do Hugging Face</a>.</li>
+    <li><strong>Google Play</strong>: a instalação e as atualizações do app seguem as políticas do Google Play.</li>
+  </ul>
+
+  <h2>5. Compartilhamento</h2>
+  <p>Arquivos só saem do app quando você toca em “Enviar” ou “Compartilhar” e escolhe o destino (WhatsApp, e-mail, Drive etc.). Nesse caso, o tratamento passa a seguir as regras do app ou serviço escolhido. O botão de validação oficial abre o site <a href="https://validar.iti.gov.br">validar.iti.gov.br</a> no navegador, onde você decide se envia o PDF.</p>
+
+  <h2>6. Crianças</h2>
+  <p>O app não é direcionado a crianças, mas pode ser usado por responsáveis para tirar fotos 3x4 de crianças (modo criança). Essas fotos são processadas apenas no aparelho e não são coletadas pelo desenvolvedor.</p>
+
+  <h2>7. Seus direitos (LGPD) e como apagar tudo</h2>
+  <p>Como o desenvolvedor não coleta dados pessoais, não há dados seus em nossa posse para acessar, corrigir ou excluir. Tudo o que o app guarda está no seu celular e pode ser apagado a qualquer momento: descartando documentos e fotos no próprio app, removendo o certificado na tela do certificado, removendo a IA na tela do assistente, ou em Configurações → Apps → Digitaliza → Armazenamento → Limpar dados (ou desinstalando o app).</p>
+
+  <h2>8. Segurança</h2>
+  <p>Os arquivos ficam na área privada do app, inacessível a outros apps. O certificado digital e a senha são criptografados com chaves do hardware do aparelho (Android Keystore) e exigem o seu bloqueio de tela para serem usados.</p>
+
+  <h2>9. Alterações desta política</h2>
+  <p>Esta política pode ser atualizada quando o app ganhar novos recursos. A data no topo indica a última atualização. Mudanças relevantes também serão mencionadas nas notas de versão do Google Play.</p>
+
+  <h2>10. Contato</h2>
+  <p>Dúvidas sobre privacidade: <a href="mailto:rodrigo-delphi@live.com">rodrigo-delphi@live.com</a></p>
+
+  <footer class="muted">Digitaliza – Scanner de documentos, PDF, foto 3x4 e assinatura digital. Desenvolvido por Rodrigo Fernandes.</footer>
+</main>
+</body>
+</html>
